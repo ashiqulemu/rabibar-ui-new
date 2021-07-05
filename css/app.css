@@ -5,6 +5,36 @@
           box-sizing: border-box;
 }
 
+.navbar {
+  background: linear-gradient(298deg, #ff2c76 -3%, #ef6b9c, #ff2f73);
+}
+
+#navbarSupportedContent {
+  padding: 0 15px;
+}
+
+#navbarSupportedContent .nav-link {
+  font-weight: 500;
+  padding: 4px 13px;
+  color: #ffffff;
+  border-radius: 4px;
+  margin: 0 3px;
+}
+
+#navbarSupportedContent .nav-link:hover {
+  background: #ec92ba94;
+  color: #fff;
+}
+
+.dropdown-item {
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background: #ee6373;
+  color: #fff;
+}
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -867,5 +897,23 @@ ul {
         -ms-flex-order: 2;
             order: 2;
   }
+}
+
+.form-section {
+  padding-left: 15px;
+  border-left: 2px solid #e91e63;
+  display: none;
+}
+
+.form-section.current {
+  display: inherit;
+}
+
+.btn-info, .btn-default {
+  margin-top: 10px;
+}
+
+html.codepen body {
+  margin: 1em;
 }
 /*# sourceMappingURL=app.css.map */

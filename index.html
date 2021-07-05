@@ -26,9 +26,15 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">About Us</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown
                 </a>
@@ -37,40 +43,56 @@
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   
                 </ul>
-              </li>
+              </li> -->
              
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="iconify" data-icon="ci:user" data-inline="false"></span> Sign Up</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="iconify" data-icon="bx:bx-key" data-inline="false"></span> Login
+                </a>
+                <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"> Login</a></li>
+                  <li><a class="dropdown-item" href="#"> Login with facebook</a></li> 
+                </ul>
+              </li>
+              </ul>
           </div>
         </div>
       </nav>
 
+      <section class="advertisements">
+          <div class="container text-center">
+            <h1>banner goes here </h1>
+          </div>
+      </section>
+
     <div class="container-fluid mt-5">
         <div class="row bg-white customControl">
             <div class="col-md-2 px-3 text-center">
-                <img class="img-fluid mb-2 img-thumbnail" src="https://static.vecteezy.com/system/resources/previews/000/580/906/non_2x/vector-creative-advertisement-banner-design.jpg" alt=""> 
-                <img class="img-fluid mb-2 img-thumbnail" src="https://static.vecteezy.com/system/resources/previews/000/580/906/non_2x/vector-creative-advertisement-banner-design.jpg" alt="">             
-                    <img class="img-fluid mb-2 img-thumbnail" src="https://static.vecteezy.com/system/resources/previews/000/580/906/non_2x/vector-creative-advertisement-banner-design.jpg" alt=""> 
-                    <img class="img-fluid mb-2 img-thumbnail" src="https://static.vecteezy.com/system/resources/previews/000/580/906/non_2x/vector-creative-advertisement-banner-design.jpg" alt="">
+                <img class="img-fluid mb-2 img-thumbnail" src="https://i.gifer.com/UEZY.gif" alt=""> 
+                <img class="img-fluid mb-2 img-thumbnail" src="https://i.pinimg.com/564x/f6/34/08/f63408dc5bb6ea1eb67832738923856d.jpg" alt="">             
+                    <img class="img-fluid mb-2 img-thumbnail" src="https://i.pinimg.com/originals/96/e8/de/96e8de8efdeb9f8567c99a7d9803a2f5.gif" alt=""> 
+                    <img class="img-fluid mb-2 img-thumbnail" src="https://i.pinimg.com/564x/f1/e0/d7/f1e0d70c62bce11ccc8a8404fd13a085.jpg" alt="">
             </div>
             <div class="col-md-8 border-left border-right  ">
               
                 <div class="row px-3">
-                    <div class="col-md-3 d-flex justify-content-center align-items-center">
+                    <div class="  shadow-sm p-4 col-md-3 d-flex justify-content-center align-items-center">
                         <div>
                             Start &amp; End Time <br>
                             <span class="badge badge-warning sectionBar">12:01 am </span> - <span class="badge badge-warning sectionBar">12:06
                                 am</span>
                         </div>
                     </div>
-                    <div class="col-md-6 d-flex  text-center border-left border-right text-capitalize align-items-center justify-content-center">
+                    <div class="  shadow-sm p-4 col-md-6 d-flex  text-center border-left border-right text-capitalize align-items-center justify-content-center">
                         <h6> quiz sponsored by : billboard.com.bd <br>
                             more info text goes here for next ...</h6>
                     </div>
-                    <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <div class="  shadow-sm p-4 col-md-3 d-flex align-items-center justify-content-center">
                         <div>
                             No of Participant : <span class="badge badge-success sectionBar">25</span>
                         </div>
@@ -248,12 +270,43 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="step p-4 shadow-lg rounded">
+                    <h3>Step form </h3>
+                    <form class="step-form">
+                        <div class="form-section">
+                          <label for="firstname">First Name:</label>
+                          <input type="text" class="form-control" name="firstname" required="">
+                      
+                          <label for="lastname">Last Name:</label>
+                          <input type="text" class="form-control" name="lastname" required="">
+                        </div>
+                      
+                        <div class="form-section">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" name="email" required="">
+                        </div>
+                      
+                        <div class="form-section">
+                          <label for="color">Favorite color:</label>
+                          <input type="text" class="form-control" name="color" required="">
+                        </div>
+                      
+                        <div class="form-navigation">
+                          <button type="button" class="previous btn btn-info pull-left"> Previous</button>
+                          <button type="button" class="next btn btn-info pull-right">Next</button>
+                          <input type="submit" class="btn btn-default pull-right">
+                          <span class="clearfix"></span>
+                        </div>
+                      
+                      </form>
+                </div>
             </div>
  
         <div class="col-md-2 px-3 text-center">
                            
                 <img class="img-fluid mb-2 img-thumbnail" src="https://static.vecteezy.com/system/resources/previews/000/580/906/non_2x/vector-creative-advertisement-banner-design.jpg" alt=""> 
-                <img class="img-fluid mb-2 img-thumbnail" src="https://static.vecteezy.com/system/resources/previews/000/580/906/non_2x/vector-creative-advertisement-banner-design.jpg" alt="">             
+                <img class="img-fluid mb-2 img-thumbnail" src="https://socialreport.zendesk.com/hc/article_attachments/115017509006/tumblr_mucr5ouPLQ1s8jl6ro1_400.gif" alt="">             
                     <img class="img-fluid mb-2 img-thumbnail" src="https://static.vecteezy.com/system/resources/previews/000/580/906/non_2x/vector-creative-advertisement-banner-design.jpg" alt=""> 
                     <img class="img-fluid mb-2 img-thumbnail" src="https://static.vecteezy.com/system/resources/previews/000/580/906/non_2x/vector-creative-advertisement-banner-design.jpg" alt="">
             </div>
@@ -454,7 +507,48 @@
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="https://code.iconify.design/2/2.0.1/iconify.min.js"></script>
+    <script src="https://rawgit.com/guillaumepotier/Parsley.js/2.3.7/dist/parsley.js"></script>
     <script src='./js/app.js'> </script>
+    <script>
+        $(function () {
+  var $sections = $('.form-section');
+
+  function navigateTo(index) {
+    // Mark the current section with the class 'current'
+    $sections
+      .removeClass('current')
+      .eq(index)
+        .addClass('current');
+    // Show only the navigation buttons that make sense for the current section:
+    $('.form-navigation .previous').toggle(index > 0);
+    var atTheEnd = index >= $sections.length - 1;
+    $('.form-navigation .next').toggle(!atTheEnd);
+    $('.form-navigation [type=submit]').toggle(atTheEnd);
+  }
+
+  function curIndex() {
+    // Return the current index by looking at which section has the class 'current'
+    return $sections.index($sections.filter('.current'));
+  }
+
+  // Previous button is easy, just go back
+  $('.form-navigation .previous').click(function() {
+    navigateTo(curIndex() - 1);
+  });
+
+  // Next button goes forward iff current block validates
+  $('.form-navigation .next').click(function() {
+    if ($('.step-form').parsley().validate({group: 'block-' + curIndex()}))
+      navigateTo(curIndex() + 1);
+  });
+
+  // Prepare sections by setting the `data-parsley-group` attribute to 'block-0', 'block-1', etc.
+  $sections.each(function(index, section) {
+    $(section).find(':input').attr('data-parsley-group', 'block-' + index);
+  });
+  navigateTo(0); // Start at the beginning
+});
+    </script>
 </body>
 
 </html>
