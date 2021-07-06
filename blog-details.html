@@ -12,7 +12,57 @@
 
 <body>
 
-
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container ">
+          <a class="navbar-brand" href="#">
+              <img src="/images/logo.png" alt="" class="brand">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  
+                </ul>
+              </li> -->
+             
+            </ul>
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="iconify" data-icon="ci:user" data-inline="false"></span> Sign Up</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="iconify" data-icon="bx:bx-key" data-inline="false"></span> Login
+                </a>
+                <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"> Login</a></li>
+                  <li><a class="dropdown-item" href="#"> Login with facebook</a></li> 
+                </ul>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
     <section class="blog-details" >
         <div class="container">
             <div class="row">
@@ -305,7 +355,194 @@
         </div>
     </section>
 
+    <footer class="footer-section mt-3">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- login modal  -->
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header sectionBar">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Login Here</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="tab-pane fade form_tab active show" id="login" role="tabpanel"
+                                aria-labelledby="login-tab">
 
+                                <div class="form-group">
+                                    <form method="POST" action="https://kabbokonna.com/admin/login" class="form-group">
+                                        <input type="hidden">
+                                        <input id="email" type="text" class="form-control"
+                                            placeholder="Username or email" aria-describedby="emailHelp" name="login"
+                                            >
+                                    </form>
+                                </div>
+                                <div class="form-group">
+
+                                    <input  type="password" class="form-control"
+                                        name="password" placeholder="Password">
+                                </div>
+                                <input type="hidden" name="from" value="st">
+                                <button type="submit" class="mt-2 btn  sectionBar">Login</button>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- register modal -->
+            <div class="modal fade" id="registerModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header sectionBar">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Register Now</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="tab-pane fade show active form_tab" id="login" role="tabpanel"
+                                aria-labelledby="login-tab">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Username" class="form-control" name="sign_username"
+                                        value="" required="" autocomplete="sign_username" id="email"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" placeholder="Password" class="form-control"
+                                        name="sign_password" required=""
+                                        autocomplete="new-password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="E-mail" class="form-control" name="sign_email"
+                                        value="" required="" autocomplete="sign_email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" name="mobile" value=""
+                                        placeholder="Mobile">
+                                </div>
+                                <input type="hidden" name="name" value="user">
+                                <button type="submit" class="ml-2 mt-2 btn sectionBar">Register</button>
+                            </div>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="adi-logo-red.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                    incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2021, All Right Reserved </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
