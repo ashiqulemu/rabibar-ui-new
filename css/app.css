@@ -916,4 +916,57 @@ ul {
 html.codepen body {
   margin: 1em;
 }
+
+.text-grad {
+  text-align: center;
+  font-size: 26px;
+  background: -webkit-linear-gradient(45deg, #37829d, #e03074);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: inherit;
+  margin-bottom: 0;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.list-group-item.active {
+  background-color: #ee6196;
+  border-color: #ed337c;
+}
+
+text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  pointer-events: none;
+  color: #fff !important;
+}
+
+#chart {
+  position: relative;
+  width: 340px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  #chart {
+    width: unset !important;
+  }
+}
+
+#question {
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.spinner_body {
+  background-color: #d30381;
+  background-image: linear-gradient(169deg, #d30381 0%, #F7CE68 100%);
+}
+
+.table-bg {
+  background: #ffffff80;
+  border-radius: 5px;
+  overflow: hidden;
+}
 /*# sourceMappingURL=app.css.map */
