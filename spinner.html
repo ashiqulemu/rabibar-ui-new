@@ -66,40 +66,40 @@
 
     <div class="container-fluid spinner_body py-3">
         <div id="question">
-            <h5 class="text-center text-white mb-0 pt-4"></h5>
+            <div id="winner" onclick="winClose();" class="text-center text-white mb-0 pt-4"></div>
         </div>
-        <div id="chart"></div> 
+        <div id="chart"></div>
         <div class="container mt-4">
             <table class="table table-striped table-bg">
                 <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
                 </tbody>
-              </table>
+            </table>
         </div>
     </div>
 
@@ -308,15 +308,15 @@
         //randomNumbers = getRandomNumbers();
         //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
         var data = [
-            { "label": "Ram", "value": 1, "question": "Congratulations! Ram, You Are winnrer! " }, 
-            { "label": "Sam", "value": 2, "question": "Congratulations! Sam, You Are winnrer! " },  
-            { "label": "suman", "value": 3, "question": "Congratulations! suman, You Are winnrer! " }, 
-            { "label": "Monir", "value": 4, "question": "Congratulations! Monir, You Are winnrer! " }, 
-            { "label": "Rabbi", "value": 5, "question": "Congratulations! Rabbi, You Are winnrer! " }, 
-            { "label": "Bob", "value": 6, "question": "Congratulations! Bob, You Are winnrer! " }, 
-            { "label": "John", "value": 7, "question": "Congratulations! John, You Are winnrer! " }, 
-            { "label": "landish", "value": 8, "question": "Congratulations! landish, You Are winnrer! " }, 
-            { "label": "Manik", "value": 9, "question": "Congratulations! Manik, You Are winnrer! " }, 
+            { "label": "Ram", "value": 1, "question": "Congratulations! Ram, You Are winnrer! " },
+            { "label": "Sam", "value": 2, "question": "Congratulations! Sam, You Are winnrer! " },
+            { "label": "suman", "value": 3, "question": "Congratulations! suman, You Are winnrer! " },
+            { "label": "Monir", "value": 4, "question": "Congratulations! Monir, You Are winnrer! " },
+            { "label": "Rabbi", "value": 5, "question": "Congratulations! Rabbi, You Are winnrer! " },
+            { "label": "Bob", "value": 6, "question": "Congratulations! Bob, You Are winnrer! " },
+            { "label": "John", "value": 7, "question": "Congratulations! John, You Are winnrer! " },
+            { "label": "landish", "value": 8, "question": "Congratulations! landish, You Are winnrer! " },
+            { "label": "Manik", "value": 9, "question": "Congratulations! Manik, You Are winnrer! " },
             { "label": "Akber", "value": 10, "question": "Congratulations! Akber, You Are winnrer! " }
         ];
         var svg = d3.select('#chart')
@@ -381,15 +381,16 @@
             }
             rotation += 90 - Math.round(ps / 2);
             vis.transition()
-                .duration(3000)
+                .duration(6000)
                 .attrTween("transform", rotTween)
                 .each("end", function () {
                     //mark question as seen
                     d3.select(".slice:nth-child(" + (picked + 1) + ") path")
                         .attr("fill", "#fff");
                     //populate question
-                    d3.select("#question h5")
+                    d3.select("#question #winner")
                         .text(data[picked].question);
+
                     oldrotation = rotation;
 
                     /* Get the result value from object "data" */
@@ -442,6 +443,8 @@
             }
             return array;
         }
+
+      
     </script>
 
 </body>

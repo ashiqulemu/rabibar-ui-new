@@ -10,12 +10,10 @@
  }
 
 
-//  window.addEventListener('load', (event) => {
-//     let chart  = document.querySelector("#chart svg");
-
-//     chart.setAttribute("height", "650");
-//     chart.setAttribute("width", "650");
-
-//     console.log();
-    
-// });
+ function winClose() {
+  let g = document.getElementById("winner");
+   g.style.display = "none" 
+   location.reload();
+   return false;
+}
+ 
