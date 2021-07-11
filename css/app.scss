@@ -952,11 +952,33 @@ text {
 
 #chart {
   position: relative;
-  width: 340px;
+  width: 650px;
   margin: 0 auto;
 
   @media(max-width:600px) {
     width: unset !important;
+    overflow: hidden;
+    svg{
+      transform: scale(0.7) translate(-89px, -132px);
+    }
+  }
+
+  @media(max-width:425px) { 
+    svg{
+      transform: scale(0.5) translate(-288px, -341px);
+    }
+  }
+
+  @media(max-width:375px) { 
+    svg{
+      transform: scale(0.5) translate(-345px, -369.7px);
+     } 
+  }
+
+  @media(max-width:320px) { 
+    svg{
+      transform: scale(0.4) translate(-496px, -529.7px);
+     } 
   }
 
 }
@@ -965,6 +987,9 @@ text {
   position: relative;
   width: 350px;
   margin: 0 auto;
+  @media(max-width:320px) { 
+    width:100%;
+  }
 }
 
 .spinner_body {
@@ -977,6 +1002,18 @@ text {
   background: #ffffff80;
   border-radius: 5px;
   overflow: hidden;
+  @media(max-width:600px) {
+    margin-top: -35%;
+  }
+  @media(max-width:425px) {
+    margin-top: -84%;
+  }
+  @media(max-width:375px) {
+    margin-top: -109%;
+  }
+  @media(max-width:320px) {
+    margin-top: -148%;
+  }
 }
 
 

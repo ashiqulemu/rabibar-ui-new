@@ -949,13 +949,39 @@ text {
 
 #chart {
   position: relative;
-  width: 340px;
+  width: 650px;
   margin: 0 auto;
 }
 
 @media (max-width: 600px) {
   #chart {
     width: unset !important;
+    overflow: hidden;
+  }
+  #chart svg {
+    -webkit-transform: scale(0.7) translate(-89px, -132px);
+            transform: scale(0.7) translate(-89px, -132px);
+  }
+}
+
+@media (max-width: 425px) {
+  #chart svg {
+    -webkit-transform: scale(0.5) translate(-288px, -341px);
+            transform: scale(0.5) translate(-288px, -341px);
+  }
+}
+
+@media (max-width: 375px) {
+  #chart svg {
+    -webkit-transform: scale(0.5) translate(-345px, -369.7px);
+            transform: scale(0.5) translate(-345px, -369.7px);
+  }
+}
+
+@media (max-width: 320px) {
+  #chart svg {
+    -webkit-transform: scale(0.4) translate(-496px, -529.7px);
+            transform: scale(0.4) translate(-496px, -529.7px);
   }
 }
 
@@ -963,6 +989,12 @@ text {
   position: relative;
   width: 350px;
   margin: 0 auto;
+}
+
+@media (max-width: 320px) {
+  #question {
+    width: 100%;
+  }
 }
 
 .spinner_body {
@@ -974,6 +1006,30 @@ text {
   background: #ffffff80;
   border-radius: 5px;
   overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .table-bg {
+    margin-top: -35%;
+  }
+}
+
+@media (max-width: 425px) {
+  .table-bg {
+    margin-top: -84%;
+  }
+}
+
+@media (max-width: 375px) {
+  .table-bg {
+    margin-top: -109%;
+  }
+}
+
+@media (max-width: 320px) {
+  .table-bg {
+    margin-top: -148%;
+  }
 }
 
 .login-panel {
