@@ -15,6 +15,15 @@ $white:#fff;
   background: linear-gradient(298deg, #ff2c76 -3%, #ef6b9c, #ff2f73);
 }
 
+.navbar-toggler {
+  .iconify{
+    color:#fff;
+  }
+}
+.navbar-light .navbar-toggler { 
+  border-color: #ffffff54;
+}
+
 #navbarSupportedContent {
   padding: 0 15px;
 
@@ -24,6 +33,10 @@ $white:#fff;
     color: #ffffff;
     border-radius: 4px;
     margin: 0 3px;
+
+    @media(max-width:1024px){
+      font-size: 13px;
+    }
 
     &:hover {
       background: #ec92ba94;
@@ -56,6 +69,7 @@ $white:#fff;
 
 body {
   //font-family: fund;
+  overflow-x: hidden;
   color: #595a5a;
 }
 
@@ -117,6 +131,11 @@ body {
   .navbar {
     padding-top: 2.2rem;
   }
+
+  .dropdown-menu[data-bs-popper] { 
+    right: 0!important; 
+    left: unset!important;
+}
 
   .navbar-brand {
     @media(max-width:425px) {
@@ -1053,6 +1072,27 @@ text {
 
 
 // login 
+
+.login-control{
+  @media(max-width:768px){
+      display: none;
+  }
+}
+.login-invisible{
+  display: none;
+  @media(max-width:768px){
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+     
+    .nav-link{
+      background: #f578a6;
+      color: #f6f7f8 !important; 
+      margin: 2px 2px!important;
+    }
+}
+}
 
 .login-panel {
   display: flex;

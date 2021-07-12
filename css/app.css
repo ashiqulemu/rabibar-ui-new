@@ -10,6 +10,14 @@
   background: linear-gradient(298deg, #ff2c76 -3%, #ef6b9c, #ff2f73);
 }
 
+.navbar-toggler .iconify {
+  color: #fff;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #ffffff54;
+}
+
 #navbarSupportedContent {
   padding: 0 15px;
 }
@@ -20,6 +28,12 @@
   color: #ffffff;
   border-radius: 4px;
   margin: 0 3px;
+}
+
+@media (max-width: 1024px) {
+  #navbarSupportedContent .nav-link {
+    font-size: 13px;
+  }
 }
 
 #navbarSupportedContent .nav-link:hover {
@@ -48,6 +62,7 @@
 }
 
 body {
+  overflow-x: hidden;
   color: #595a5a;
 }
 
@@ -109,6 +124,11 @@ body {
 
 .header-main .navbar {
   padding-top: 2.2rem;
+}
+
+.header-main .dropdown-menu[data-bs-popper] {
+  right: 0 !important;
+  left: unset !important;
 }
 
 @media (max-width: 425px) {
@@ -1066,6 +1086,36 @@ text {
   top: -1px;
   right: 13px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .login-control {
+    display: none;
+  }
+}
+
+.login-invisible {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .login-invisible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .login-invisible .nav-link {
+    background: #f578a6;
+    color: #f6f7f8 !important;
+    margin: 2px 2px !important;
+  }
 }
 
 .login-panel {
