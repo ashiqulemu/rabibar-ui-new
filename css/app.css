@@ -1054,9 +1054,10 @@ text {
 
 #winner {
   position: absolute;
-  top: 88px;
+  top: 41px;
   bottom: 0;
-  background: #ed4083;
+  padding: 50px;
+  background: #ed4083f7;
   z-index: 3;
   width: 100%;
   height: 500px;
@@ -1071,7 +1072,7 @@ text {
   align-items: center;
   font-size: 2.3rem;
   -webkit-box-shadow: -4px 15px 20px 10px #00000029;
-          box-shadow: -4px 15px 20px 10px #00000029;
+  box-shadow: -4px 15px 20px 10px #00000029;
 }
 
 #winner:empty {
@@ -1454,20 +1455,63 @@ text {
 }
 
 @media (max-width: 768px) {
-  .title-trend {
-    background: linear-gradient(45deg, #e92a63 80%, transparent 0%);
+  .order-control .firstRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .order-control .firstRow div:nth-child(2) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .order-control .firstRow div:nth-child(3) {
+    display: none;
+  }
+  .order-control .text-grad {
+    margin-top: 18px;
+    -webkit-animation: text 2s forwards infinite;
+            animation: text 2s forwards infinite;
   }
 }
 
-@media (max-width: 425px) {
-  .title-trend {
-    background: linear-gradient(45deg, #e92a63 75%, transparent 0%);
+@-webkit-keyframes text {
+  0% {
+    letter-spacing: 2px;
+  }
+  25% {
+    letter-spacing: 5px;
+  }
+  50% {
+    letter-spacing: 10px;
+  }
+  75% {
+    letter-spacing: 5px;
+  }
+  100% {
+    letter-spacing: 2px;
   }
 }
 
-@media (max-width: 375px) {
-  .title-trend {
-    background: linear-gradient(45deg, #e92a63 72%, transparent 0%);
+@keyframes text {
+  0% {
+    letter-spacing: 2px;
+  }
+  25% {
+    letter-spacing: 5px;
+  }
+  50% {
+    letter-spacing: 10px;
+  }
+  75% {
+    letter-spacing: 5px;
+  }
+  100% {
+    letter-spacing: 2px;
   }
 }
 /*# sourceMappingURL=app.css.map */
