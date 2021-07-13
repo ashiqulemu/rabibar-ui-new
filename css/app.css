@@ -1088,9 +1088,49 @@ text {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .login-control {
     display: none;
+  }
+}
+
+.authentication {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .authentication {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 6px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: linear-gradient(298deg, #ff2c76 -3%, #ef6b9c, #ff2f73);
+  }
+  .authentication a {
+    margin: 3px;
+    background-color: #ee6095;
+    padding: 5px 12px;
+    color: #fff;
+    border: 1px solid #ef9fbc;
+    border-radius: 5px;
+    font-size: 13px;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .authentication a:hover {
+    background: #fff;
+    color: #e91e63;
   }
 }
 
